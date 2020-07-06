@@ -1,0 +1,27 @@
+$color-primary: rgb(71, 62, 190);
+$color-secondary: rgb(115, 105, 246);
+$text-light: rgb(221, 234, 255);
+
+.text-light {
+    color: rgb(221, 234, 255);
+}
+
+.primary-bg {
+    background: $color-primary;
+}
+
+.page-header {
+    @extend .text-light,
+    .primary-bg;
+    padding: 10px;
+}
+
+.landing {
+    @extend .primary-bg;
+    background: linear-gradient(60deg, $color-primary, $color-secondary);
+    height: 80vh;
+
+    .col-1 {
+        @extend .text-light;
+    }
+}

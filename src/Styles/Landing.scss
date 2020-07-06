@@ -1,0 +1,54 @@
+$display-1: flex;
+
+.row {
+    height: 80vh;
+    display: $display-1;
+    justify-content: center;
+    align-items: center;
+
+    .col-1 {
+        width: 50%;
+        text-align: center;
+
+        .welcome {
+            font-size: 3.7rem;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            letter-spacing: 2px;
+        }
+
+        button {
+            background-color: rgb(255, 255, 255);
+            color: blueviolet;
+            outline: none;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            transition: all 2s;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 2px 2px 3px grey;
+                transform: translateY(-3%);
+            }
+        }
+    }
+
+    .col-2 {
+        width: 50%;
+
+        img {
+            width: 80%;
+            // background: #eee;
+            border-radius: 30px;
+        }
+    }
+}
