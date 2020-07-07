@@ -5,7 +5,7 @@ const Item = ({ item }) => {
 	return (
 		<div className="card">
 			<div className="card-image">
-				<img src="./assets/images/components-images/card-image.jpeg" alt="" />
+				<img src={`./assets/images/components-images/${item.image}.png`} alt="" />
 			</div>
 			<div className="card-content">
 				<div className="card-title">

@@ -1,27 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Item from './Item';
+import metadata from '../metadata/metadata';
 
 const Items = () => {
-	const items = [
-		{
-			title: 'search-component',
-			description: 'component description',
-			tag: 'react',
-			date: 'July 4'
-		},
-		{
-			title: 'search-component',
-			description: 'component description',
-			tag: 'angular',
-			date: 'June 23'
-		},
-		{
-			title: 'search-component',
-			description: 'component description',
-			tag: 'angular',
-			date: 'June 15'
-		}
-	];
+	const [ items ] = useState(metadata);
+
 	return (
 		<div className="items">{items.length !== 0 && items.map(item => <Item key={item.title} item={item} />)}</div>
 	);
