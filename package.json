@@ -1,24 +1,32 @@
 {
-  "name": "nodejsdownloadfileamazons3",
+  "name": "uidynamic",
   "version": "1.0.0",
-  "description": "Nodejs Express RestAPIs downloads file from Amazon S3",
+  "description": "Creative and Dynamic UI choice for developers",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server": "npm run build --prefix client && nodemon server.js",
+    "client": "npm start --prefix client",
+    "build-client": "npm run build --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [
-    "Nodejs",
-    "Express",
-    "RestAPI",
-    "DownloadFile",
-    "Amazon",
-    "S3",
-    "AWS-SDK"
+    "ui",
+    "dynamic",
+    "components",
+    "ux",
+    "creative"
   ],
-  "author": "grokonez.com",
+  "author": "mister_shadrack",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.302.0",
     "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "^12.14.1",
+    "npm": "^6.13.4"
   }
 }

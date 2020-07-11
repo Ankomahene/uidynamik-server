@@ -1,13 +1,17 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 let router = require('./app/routers/s3.router.js');
 app.use('/', router);
 
-// Create a Server
-const server = app.listen(8080, function() {
-	let host = server.address().address;
-	let port = server.address().port;
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-	console.log('App listening at http://%s:%s', host, port);
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
+
+// Create a Server
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`server has started on port: ${port}`));

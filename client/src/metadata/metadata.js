@@ -1,5 +1,6 @@
 export default () => [
 	{
+		id: '523467827882bca6700abc3426ca0',
 		title: 'Subscribe  Card',
 		description: 'Get the Latest updates right into your inbox',
 		tag: 'react',
@@ -9,6 +10,7 @@ export default () => [
 		stacks: [ 'react', 'scss' ]
 	},
 	{
+		id: '234567890-987687532736-test-image',
 		title: 'Search Component',
 		description: 'component description',
 		tag: 'react',
@@ -16,23 +18,5 @@ export default () => [
 		image: 'test-image',
 		colors: [],
 		stacks: [ 'react', 'css' ]
-	},
-	{
-		title: 'Simple Reviews Card',
-		description: 'component description',
-		tag: 'angular',
-		date: 'June 23',
-		image: 'test-image',
-		colors: [],
-		stacks: [ 'angular', 'scss' ]
-	},
-	{
-		title: 'Subscribe Card',
-		description: 'component description',
-		tag: 'angular',
-		date: 'June 15',
-		image: 'test-image',
-		colors: [],
-		stacks: [ 'angular', 'css' ]
 	}
 ];
