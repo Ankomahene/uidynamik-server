@@ -36,6 +36,11 @@ $text-light: rgb(221, 234, 255);
     .col-1 {
         @extend .text-light;
     }
+
+    @media screen and (max-width: 415px) {
+        height: 70vh;
+    }
+
 }
 
 .items {
