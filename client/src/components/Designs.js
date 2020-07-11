@@ -19,9 +19,11 @@ const Designs = () => {
 
 	return (
 		<div>
-			<div className="top-section">
-				<Search onSearchChange={e => setSearchText(e.target.value)} />
-				<Tags />
+			<div className="top-section-wrapper">
+				<div className="top-section">
+					<Search onSearchChange={e => setSearchText(e.target.value)} />
+					<Tags />
+				</div>
 			</div>
 			<div className="main-content">
 				<Items items={filteredItems} />
