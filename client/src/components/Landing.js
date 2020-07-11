@@ -8,7 +8,7 @@ const Landing = () => {
 			<div className="row">
 				<div className="col col-1">
 					<div className="welcome">WELCOME TO</div>
-					<div className="title">CREATIVE DAILY UI </div>
+					<div className="title">UI Dynamik </div>
 					<p>Free Beautiful UIs for Frontend Developers</p>
 					<NavLink to="/designs">
 						<button>View Designs</button>

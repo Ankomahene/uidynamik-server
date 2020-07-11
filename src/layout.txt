@@ -1,8 +1,0 @@
-items = [
-    { 
-        title: 'search-component', 
-        description: 'component description',
-        tag: 'angular', 
-        date: ''
-    }
-]
