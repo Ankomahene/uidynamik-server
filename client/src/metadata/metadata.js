@@ -1,5 +1,15 @@
 export default () => [
 	{
+		id: '7e086af2-062d-4411-b25e-df56577ff68e',
+		title: 'Stats  Components',
+		description: 'Components to keep track of your Projects Stats',
+		tag: 'react',
+		date: 'July 11, 2020',
+		image: 'stats-components',
+		colors: [ '#624CAB', '#758ecd', '#7189ff', '#8472c0', '#a0ddff' ],
+		stacks: [ 'react', 'css' ]
+	},
+	{
 		id: '523467827882bca6700abc3426ca0',
 		title: 'Subscribe  Card',
 		description: 'Get the Latest updates right into your inbox',
