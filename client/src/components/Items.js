@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Item from './Item';
-import metadata from '../metadata/metadata';
 
-const Items = () => {
-	const [ items ] = useState(metadata);
-
+const Items = ({ items }) => {
 	return (
-		<div className="items">{items.length !== 0 && items.map(item => <Item key={item.title} item={item} />)}</div>
+		<div className="items">
+			{items.length !== 0 ? (
+				items.map(item => <Item key={item.title} item={item} />)
+			) : (
+				<h2 style={{ marginTop: '200px' }}> NO Matching Items found</h2>
+			)}
+		</div>
 	);
 };
 

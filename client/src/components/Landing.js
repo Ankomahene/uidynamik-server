@@ -7,15 +7,17 @@ const Landing = () => {
 		<div className="landing primary-bg">
 			<div className="row">
 				<div className="col col-1">
-					<div className="welcome">WELCOME TO</div>
-					<div className="title">UI Dynamik </div>
-					<p>Free Beautiful UIs for Frontend Developers</p>
-					<NavLink to="/designs">
-						<button>View Designs</button>
-					</NavLink>
+					<div>
+						<div className="welcome">WELCOME</div>
+						<div className="title">BUILD FASTER AND BETTER.</div>
+						<div className="info">Free & Beautiful Dynamic UI Choices for Developers.</div>
+						<NavLink to="/designs">
+							<button>View Designs</button>
+						</NavLink>
+					</div>
 				</div>
 				<div className="col col-2">
-					<img src="./assets/images/futuristic_interface.svg" alt="" />
+					<img src="./assets/images/banner-image.png" alt="" />
 				</div>
 			</div>
 		</div>

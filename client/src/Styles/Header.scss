@@ -1,0 +1,24 @@
+.handles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+
+    a {
+        margin: 0 2px
+    }
+
+    .name {
+        margin-bottom: 5px;
+    }
+
+    @media screen and (max-width: 510px) {
+        display: block;
+        text-align: center;
+        font-size: small;
+
+        .surname {
+            display: none;
+        }
+    }
+}

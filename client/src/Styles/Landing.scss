@@ -11,17 +11,38 @@ $display-1: flex;
         text-align: center;
 
         .welcome {
-            font-size: 3.7rem;
+            font-size: 3.2rem;
             font-weight: bold;
+
+            @media screen and (max-width: 965px) {
+                font-size: 2.5rem;
+            }
+
+            @media screen and (max-width: 7368px) {
+                font-size: 2rem;
+            }
         }
 
         .title {
-            font-size: 2.4rem;
+            font-size: 2rem;
             letter-spacing: 1px;
+
+            @media screen and (max-width: 965px) {
+                font-size: 1.6rem;
+            }
+
+            @media screen and (max-width: 7368px) {
+                font-size: 1.1rem;
+            }
         }
 
-        p {
+        .info {
             letter-spacing: 2px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 7368px) {
+                letter-spacing: normal;
+            }
         }
 
         button {
@@ -40,6 +61,14 @@ $display-1: flex;
                 transform: translateY(-3%);
             }
         }
+
+        @media screen and (max-width: 645px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
     }
 
     .col-2 {
@@ -50,5 +79,16 @@ $display-1: flex;
             // background: #eee;
             border-radius: 30px;
         }
+
+        @media screen and (max-width: 645px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+    }
+
+    @media screen and (max-width: 645px) {
+        display: block;
     }
 }

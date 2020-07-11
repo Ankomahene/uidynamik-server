@@ -13,10 +13,19 @@ $text-light: rgb(221, 234, 255);
 .page-header {
     @extend .text-light,
     .primary-bg;
-    padding: 10px;
+    padding: 0 20px 10px 20px;
+    height: 60px;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-wrapper {
+    height: 70px;
 }
 
 .landing {
