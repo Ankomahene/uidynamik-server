@@ -3,11 +3,20 @@ import Item from './Item';
 
 const Items = ({ items }) => {
 	return (
-		<div className="items">
+		<div className="row justify-content-center">
 			{items.length !== 0 ? (
-				items.map(item => <Item key={item.title} item={item} />)
+				items.map(item => (
+					<div key={item.id} className="col-10 col-sm-6 col-md-4">
+						<Item item={item} />
+					</div>
+				))
 			) : (
-				<h2 style={{ marginTop: '200px' }}> NO Matching Items found</h2>
+				<div>
+					<div class="alert alert-info" role="alert">
+						<h4> No matching item found</h4>
+					</div>
+					<p>Component you are searching for does not exist Yet</p>
+				</div>
 			)}
 		</div>
 	);

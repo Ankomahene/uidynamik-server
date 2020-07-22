@@ -6,7 +6,7 @@ export default () => [
 		tag: 'react',
 		date: 'July 11, 2020',
 		image: 'stats-components',
-		colors: [ '#624CAB', '#758ecd', '#7189ff', '#8472c0', '#a0ddff' ],
+		colors: [ '624CAB', '758ecd', '7189ff', '8472c0', 'a0ddff' ],
 		stacks: [ 'react', 'css' ]
 	},
 	{
@@ -16,11 +16,21 @@ export default () => [
 		tag: 'react',
 		date: 'July 7, 2020',
 		image: 'subscribe-card',
-		colors: [ '#EBEBF3', '#6707C0', '#B4B4BC', '9798A1' ],
+		colors: [ 'EBEBF3', '6707C0', 'B4B4BC', '9798A1' ],
 		stacks: [ 'react', 'scss' ]
 	},
 	{
 		id: '234567890-987687532736-test-image',
+		title: 'Search Component',
+		description: 'component description',
+		tag: 'angular',
+		date: 'July 4',
+		image: 'test-image',
+		colors: [],
+		stacks: [ 'angular', 'css' ]
+	},
+	{
+		id: '234567890-987687532736-test-image2',
 		title: 'Search Component',
 		description: 'component description',
 		tag: 'react',

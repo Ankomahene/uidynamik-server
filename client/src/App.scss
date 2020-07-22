@@ -22,6 +22,11 @@ $text-light: rgb(221, 234, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .header-text {
+        color: rgb(238, 237, 237);
+        text-decoration: none;
+    }
 }
 
 .page-header-wrapper {
@@ -33,18 +38,4 @@ $text-light: rgb(221, 234, 255);
     background: linear-gradient(60deg, $color-primary, $color-secondary);
     height: 80vh;
 
-    .col-1 {
-        @extend .text-light;
-    }
-
-    @media screen and (max-width: 415px) {
-        height: 70vh;
-    }
-
-}
-
-.items {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }

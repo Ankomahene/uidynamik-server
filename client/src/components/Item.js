@@ -1,50 +1,36 @@
 import React from 'react';
 import '../Styles/Item.scss';
+import { NavLink } from 'react-router-dom';
+import { DownloadIcon } from './Icons';
 
 const Item = ({ item }) => {
 	return (
-		<div className="card">
-			<div className="card-image">
-				<img src={`./assets/images/components-images/${item.image}.png`} alt="" />
-			</div>
-			<div className="card-content">
-				<div className="card-title">
-					<h3>{item.title}</h3>
-					<img src={`/assets/images/${item.tag}.svg`} alt="" className="tag-icon" />
+		<div className="card my-2" style={{ width: '100%' }}>
+			<NavLink to={`/designs/${item.id}/${item.title}`} className="card-item">
+				<img src={`/assets/images/components-images/${item.image}.png`} alt="" width="100%" />
+				<div className="card-body">
+					<div className="card-title d-flex justify-content-between align-items-center text-secondary">
+						<h4>{item.title}</h4>
+						<img
+							src={`/assets/images/${item.tag}.svg`}
+							width="30px"
+							className="border rounded-circle p-1"
+							alt=""
+						/>
+					</div>
+					<div className="row">
+						<div className="col text-muted mt-2">
+							<p>{item.date}</p>
+						</div>
+						<div>
+							<button className="download-btn">
+								Download <DownloadIcon />
+							</button>
+						</div>
+					</div>
 				</div>
-				<div className="card-footer">
-					<p>{item.date}</p>
-					<a href={`/api/files/${item.id}?filename=${item.image}.zip`}>
-						<button className="download-btn">
-							Download <DownloadIcon />
-						</button>
-					</a>
-				</div>
-			</div>
+			</NavLink>
 		</div>
-	);
-};
-
-const DownloadIcon = () => {
-	return (
-		<svg
-			width="1em"
-			height="1em"
-			viewBox="0 0 16 16"
-			className="bi bi-download"
-			fill="currentColor"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path
-				fillRule="evenodd"
-				d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8z"
-			/>
-			<path
-				fillRule="evenodd"
-				d="M5 7.5a.5.5 0 0 1 .707 0L8 9.793 10.293 7.5a.5.5 0 1 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5 8.207A.5.5 0 0 1 5 7.5z"
-			/>
-			<path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 1z" />
-		</svg>
 	);
 };
 
