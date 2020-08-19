@@ -1,5 +1,4 @@
 const AWS = require('aws-sdk');
-const env = require('./s3.env.js');
 
 const s3Client = new AWS.S3({
 	accessKeyId: process.env.AWS_ACCESS_KEY,
@@ -8,7 +7,7 @@ const s3Client = new AWS.S3({
 });
 
 const downloadParams = {
-	Bucket: env.Bucket,
+	Bucket: process.env.Bucket,
 	Key: ''
 };
 
